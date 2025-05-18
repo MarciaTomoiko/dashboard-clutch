@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.game-selector-container {
+  background-image: url('/fundoqualeseujogo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #f0ce0f; /* Amarelo tema */
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.game-select {
+  padding: 0.7rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  border: 1px solid #f3c221;
+  background-color: #424242;
+  color: #f3c221;
+  margin-bottom: 30px;
+  cursor: pointer;
+  transition: border 0.3s ease, background-color 0.3s ease;
+}
+
+.game-select:hover {
+  border-color: #FFCD00;
+  background-color: #555555;
+}
+
+.confirm-button {
+  background-color: #333841;
+  color: #f3c221;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-button:hover {
+  background-color: #757165;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(99, 96, 90, 0.6);
+}

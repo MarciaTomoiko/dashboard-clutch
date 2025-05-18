@@ -1,0 +1,65 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.login-container {
+  background-image: url('/fundo.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  h1 {
+  font-size: 5rem;
+  color: #000000; /* Cor do título */
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-align: center; /* Garante que o título esteja centralizado no eixo horizontal */
+}
+
+  .login-box {
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+  }
+
+.google-btn {
+  background-color: #333841; /* Cor do fundo do Google */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.google-btn:hover {
+  background-color: #f3c221; /* Cor mais escura no hover */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte no hover */
+}
+
+.google-btn:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(26, 25, 24, 0.63); /* Efeito de foco com sombra */
+}
+
+.google-btn .google-icon {
+  margin-right: 10px;
+}
+
+.google-btn .google-text {
+  font-weight: 500;
+}
